@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermarket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Supermarket</h1>
+    <ul>
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#products">Продукты</a></li>
+      <li><a href="#offers">Акции</a></li>
+      <li><a href="#cart">Корзина</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+</header>
+
+<section id="home">
+  <h1>Добро пожаловать!</h1>
+  <p><h2>Лучшие продукты и свежие акции! </h2></p>
+</section>
+
+<section id="products">
+  <h2>Наши продукты</h2>
+  <div class="grid">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400" alt="Яблоки">
+      <h3>Яблоки</h3>
+      <p>500 тг/кг</p>
+      <button onclick="addToCart('Яблоки', 500)">Добавить</button>
+    </div>
+    <div class="product">
+      <img src="https://lesaffre.ru/wp-content/uploads/2023/09/Pshenichnyj-kraft.jpg-min.jpg" alt="Хлеб">
+      <h3>Хлеб</h3>
+      <p>250 тг</p>
+      <button onclick="addToCart('Хлеб', 250)">Добавить</button>
+    </div>
+    <div class="product">
+      <img src="https://vostok-moloko.kz/assets/template/files/images/katalog/moloko/moloko-3,2-peht.jpg" alt="Молоко">
+      <h3>Молоко</h3>
+      <p>300 тг</p>
+      <button onclick="addToCart('Молоко', 300)">Добавить</button>
+    </div>
+  </div>
+</section>
+
+<section id="offers">
+  <h2>Акции </h2>
+  <div class="grid">
+    <div class="product offer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGNTqJwIrhlntZsSrVm6l3SAbJ1q_qXMCfvg&s" alt="Апельсины">
+      <h3>Апельсины</h3>
+      <p><s>700 тг</s><span class="new-price">500 тг</span></p>
+      <button onclick="addToCart('Апельсины (акция)', 500)">Добавить</button>
+    </div>
+    <div class="product offer">
+      <img src="https://www.ermolino-produkty.ru/picts/products/1500h1000-ermolinskiy_cheese.jpg" alt="Сыр">
+      <h3>Сыр</h3>
+      <p><s>1500 тг</s><span class="new-price">1200 тг</span></p>
+      <button onclick="addToCart('Сыр (акция)', 1200)">Добавить</button>
+    </div>
+    <div class="product offer">
+      <img src="https://img.championat.com/s/732x488/news/big/t/m/kak-est-shokolad-bez-vreda-dlya-figury_16133225512088688071.jpg" alt="Шоколад">
+      <h3>Шоколад</h3>
+      <p><s>800 тг</s><span class="new-price">600 тг</span></p>
+      <button onclick="addToCart('Шоколад (акция)', 600)">Добавить</button>
+    </div>
+  </div>
+</section>
+
+<section id="cart">
+  <h2>Ваша корзина</h2>
+  <ul id="cart-list">
+    <li>Пока пусто</li>
+  </ul>
+  <p><strong>Итого: <span id="total">0</span> тг</strong></p>
+</section>
+<section id="contacts">
+          <h2>Контакты</h2>
+          <p>📞 Телефон: +7 (777) 123-45-67</p>
+          <p>📧 Email: supermarket@mail.kz</p>
+          <p>📍 Адрес: г. Алматы, ул. Абая, 10</p>
+</section>
+</body>
+</html>

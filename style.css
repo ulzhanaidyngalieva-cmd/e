@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+  padding: 80px 20px 20px;
+}
+
+#home {
+ background: url("https://na-dache.pro/uploads/posts/2021-11/1635811905_2-na-dache-pro-p-interer-produktovogo-magazina-foto-2.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#products {
+   background: #ecf0f1;
+}
+
+#offers {
+  background: #f9f9f9;
+}
+
+#cart {
+  background: #f4f4f4;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #219150;
+}
+
+.offer .old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.offer .new-price {
+  color: red;
+  font-weight: bold;
+}
+
+#cart-list li {
+  margin-bottom: 8px;
+}
+
+#cart-list button {
+  background: red;
+  padding: 3px 6px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+#contacts {
+  background: #ecf0f1;
+  text-align: center;
+}
+
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
